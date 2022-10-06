@@ -4,4 +4,5 @@ app/__pycache__/*.pyc
 __pycache__/
 __pycache__/*
 __pycache__/*.pyc
+app/__pycache__/**.pyc
 sql_app.db
