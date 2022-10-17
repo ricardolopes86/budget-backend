@@ -10,6 +10,16 @@ def get_gastos(db: Session, mes: int, ano: int):
     return db.query(Gastos).filter(Gastos.mes == mes, Gastos.ano == ano).first()
 
 
+def create_gasto(db: Session, gasto: Gastos):
+    print("entrou na API")
+    gasto = Gastos(Fixos=gasto.Fixos, Variaveis=gasto.Variaveis,
+                    Salario=gasto.Salario, mes=gasto.mes, ano=gasto.ano)
+    db.add(gasto)
+    db.commit()
+    db.refresh(gasto)
+    return gasto
+
+
 def get_fixos(db: Session, mes: int, ano: int):
     return db.query(Fixos).filter(Fixos.mes == mes, Fixos.ano == ano).first()
 

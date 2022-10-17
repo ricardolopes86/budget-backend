@@ -1,9 +1,9 @@
-from fastapi import Depends, FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException, status
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import api, models, schemas
-from .database import SessionLocal, engine 
+from .database import SessionLocal, engine
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -28,6 +28,11 @@ def get_db():
     finally:
         db.close()
 
+@app.get('/')
+def index():
+    print(f'chegou no index')
+    return {"error": "not found"}
+
 
 @app.get('/gastos/{mes}/{ano}/', response_model=schemas.Gastos)
 def read_gastos(mes: int, ano: int, db: Session = Depends(get_db)):
@@ -36,6 +41,11 @@ def read_gastos(mes: int, ano: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Mes or Ano not found")
 
     gastos = api.get_gastos(db, mes=mes, ano=ano)
+    return gastos
+
+@app.post('/gastos', response_model=schemas.Gastos)
+def criar_gasto(gasto: schemas.Gastos, db: Session = Depends(get_db)):
+    gastos = api.create_gasto(db=db, gasto=gasto)
     return gastos
 
 

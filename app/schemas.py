@@ -40,19 +40,23 @@ class ContasBase(BaseModel):
 
 class Fixos(FixosBase):
     class Config:
+        arbitrary_types_allowed = True
         orm_mode = True
 
 
 class Gastos(GastosBase):
     class Config:
+        arbitrary_types_allowed = True
         orm_mode = True
 
 
 class Variaveis(VariaveisBase):
     class Config:
+        arbitrary_types_allowed = True
         orm_mode = True
 
 
 class Contas(ContasBase):
     class Config:
+        arbitrary_types_allowed = True
         orm_mode = True
