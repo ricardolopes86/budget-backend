@@ -6,3 +6,5 @@ __pycache__/*
 __pycache__/*.pyc
 app/__pycache__/**.pyc
 sql_app.db
+__pycache__/**
+__pycache__/**.pyc
