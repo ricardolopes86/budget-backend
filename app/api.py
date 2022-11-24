@@ -11,9 +11,8 @@ def get_gastos(db: Session, mes: int, ano: int):
 
 
 def create_gasto(db: Session, gasto: Gastos):
-    print("entrou na API")
     gasto = Gastos(Fixos=gasto.Fixos, Variaveis=gasto.Variaveis,
-                    Salario=gasto.Salario, mes=gasto.mes, ano=gasto.ano)
+                   Salario=gasto.Salario, mes=gasto.mes, ano=gasto.ano)
     db.add(gasto)
     db.commit()
     db.refresh(gasto)
