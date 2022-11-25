@@ -44,7 +44,7 @@ def read_gastos(mes: int, ano: int, db: Session = Depends(get_db)):
     return gastos
 
 
-@app.post('/api/v1/api/gastos', response_model=schemas.Gastos)
+@app.post('/api/v1/gastos', response_model=schemas.Gastos)
 def criar_gasto(gasto: schemas.Gastos, db: Session = Depends(get_db)):
     gastos = api.create_gasto(db=db, gasto=gasto)
     return gastos
