@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-25T23:09:28.240Z" agent="5.0 (Macintosh)" etag="S3SNpNeYqKFVv_3k62bN" version="20.6.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-25T23:17:58.076Z" agent="5.0 (Macintosh)" etag="i0XnjQZXUSZ3oR9NGkAp" version="20.6.0" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Diagrama de Classes">
     <mxGraphModel dx="1234" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -204,11 +204,14 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="iG6f5eitdYqBKNu9N58C" name="Page-2">
+  <diagram id="iG6f5eitdYqBKNu9N58C" name="Casos de Uso">
     <mxGraphModel dx="1234" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="90" width="330" height="460" as="geometry" />
+        </mxCell>
         <mxCell id="Mjl5k9vI41-thZLp8C9R-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-1" target="Mjl5k9vI41-thZLp8C9R-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -221,23 +224,63 @@
         <mxCell id="Mjl5k9vI41-thZLp8C9R-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-1" target="Mjl5k9vI41-thZLp8C9R-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mjl5k9vI41-thZLp8C9R-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-1" value="Usuário" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="100" y="90" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=open;startFill=0;endArrow=open;endFill=0;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-2" target="Mjl5k9vI41-thZLp8C9R-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mjl5k9vI41-thZLp8C9R-14">
+          <mxGeometry x="0.0278" y="-2" relative="1" as="geometry">
+            <mxPoint x="-5" y="98" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Mjl5k9vI41-thZLp8C9R-2" value="Criar um Gasto Fixo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="150" width="120" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;startArrow=open;startFill=0;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-4" target="Mjl5k9vI41-thZLp8C9R-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Mjl5k9vI41-thZLp8C9R-4" value="Criar uma Entrada" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=open;startFill=0;endArrow=open;endFill=0;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-5" target="Mjl5k9vI41-thZLp8C9R-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Mjl5k9vI41-thZLp8C9R-5" value="Criar um Gasto Variável" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="350" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Mjl5k9vI41-thZLp8C9R-9" value="Gerar um Relatório" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=open;endFill=0;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-9" target="Mjl5k9vI41-thZLp8C9R-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-26" value="&amp;lt;&amp;lt;depends&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mjl5k9vI41-thZLp8C9R-25">
+          <mxGeometry x="-0.0303" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-9" value="Visualiza Relatório" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="220" y="450" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Mjl5k9vI41-thZLp8C9R-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="190" y="100" width="180" height="440" as="geometry" />
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-12" value="Sistema Financeiro" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="105" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-13" value="Calcular o Valor Total" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-18" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="374.66462971327815" y="252.11535907014706" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-19" value="Visualiza Relatório" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=open;endFill=0;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-20" target="Mjl5k9vI41-thZLp8C9R-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-24" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;" edge="1" parent="1" source="Mjl5k9vI41-thZLp8C9R-20" target="Mjl5k9vI41-thZLp8C9R-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mjl5k9vI41-thZLp8C9R-20" value="Sistema" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
