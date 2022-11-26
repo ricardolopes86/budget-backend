@@ -19,6 +19,15 @@ def create_gasto(db: Session, gasto: Gastos):
     return gasto
 
 
+def create_variavel(db: Session, gasto: Variaveis):
+    gasto = Variaveis(Compras=gasto.Compras, Restaurantes=gasto.Restaurantes,
+                      Mercado=gasto.Mercado, Carro=gasto.Carro, mes=gasto.mes, ano=gasto.ano)
+    db.add(gasto)
+    db.commit()
+    db.refresh(gasto)
+    return gasto
+
+
 def get_fixos(db: Session, mes: int, ano: int):
     return db.query(Fixos).filter(Fixos.mes == mes, Fixos.ano == ano).first()
 

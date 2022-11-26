@@ -56,6 +56,12 @@ def read_fixos(mes: int, ano: int, db: Session = Depends(get_db)):
     return fixos
 
 
+@app.post('/api/v1/variaveis', response_model=schemas.Variaveis)
+def criar_variavel(gasto: schemas.Variaveis, db: Session = Depends(get_db)):
+    gastos = api.create_variavel(db=db, gasto=gasto)
+    return gastos
+
+
 @app.get("/api/v1/variaveis/{mes}/{ano}/", response_model=schemas.Variaveis)
 def read_variaveis(mes: int, ano: int, db: Session = Depends(get_db)):
     variaveis = api.get_variaveis(db, mes=mes, ano=ano)
